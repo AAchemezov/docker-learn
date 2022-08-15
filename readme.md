@@ -1,5 +1,5 @@
-##Docker
-###1) Используя docker-compose поднять контейнеры mysql, wordpress.
+## Docker
+### 1) Используя docker-compose поднять контейнеры mysql, wordpress.
 
 https://docs.docker.com/samples/wordpress/
 
@@ -35,7 +35,7 @@ volumes:
 ```
 > docker compose up -d
 
-###2) Как собрать docker образ?
+### 2) Как собрать docker образ?
 
 Для начала нужен DockerFile
 далее сборка образа
@@ -48,14 +48,14 @@ https://docs.docker.com/engine/reference/commandline/build/
 
 в конце указывается контекст выполнения (путь)
 
-###3) Как определить состояние контейнера Docker?
+### 3) Как определить состояние контейнера Docker?
 - **docker ps** (статус и прочее)
 - **docker stats** (использование ресурсов)
 - **docker inspect** (сводная информация о контейнере)
 - **docker logs** (вывод в консоль запущенного процесса) (-f следить за логами)
 - **docker exec** -it bash(например) (зайти в контейнер, посмотреть что там)
 
-###4) Что такое Docker Swarm?
+### 4) Что такое Docker Swarm?
    Оркестратор, встроенный в Docker
 
 Решаемые задачи:
@@ -72,7 +72,7 @@ https://docs.docker.com/engine/reference/commandline/build/
 Число менеджеров рекомендовано от 3 до 7.  
 Кластер с n менеджерами остаётся стабильным при потере (n-1)/2 менеджеров
 
-##5) Какие сети доступны по умолчанию в Docker?
+## 5) Какие сети доступны по умолчанию в Docker?
 
 - **none (null)**
   без доступа к сети
